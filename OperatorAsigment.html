@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoh Tipe Data Assignment Operator</title>
+    </head>
+</head>
+<body>
+    <h1>Tipe Data Assignment Operator</h1>
+    <p>Nilai a = 10.25, b = 5, dan c = 15</p>
+    <p id ="myoutput"></p>
+
+    <script>
+
+        let a = 10.25;
+        let b = 5;
+        let c = 15;
+
+         let penjumlahan = a += b += c;
+         let pengurangan = a -= b -= c;
+         let perkalian = a *= b *= c;
+         let pembagian = a /= b /= c;
+         let hasilBagi = a %= b %= c;
+
+         document.getElementById("myoutput").innerHTML = "Penjumlahan = " + penjumlahan + "<br>" 
+                                                        + "Pengurangan = " + pengurangan + "<br>"
+                                                         + "Perkalian = " + perkalian + "<br>"
+                                                          + "Pembagian = " + pembagian + "<br>"
+                                                           + "HasilBagi = " + hasilBagi;
+         </script>
+</html>
