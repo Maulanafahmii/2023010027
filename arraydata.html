@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Array</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Data Array</h1>
+    <div id="arrayData"></div>
+
+    <script>
+      const namaMhs = ["Fahmi"];
+      const tahunLahir = [2006];
+      const handphoneMhs = ["08571243259"];
+
+      function displayArrayData() {
+        let html = "<h2>Data Mahasiswa</h2>";
+
+        // Tampilkan data awal
+        namaMhs.forEach((nama, index) => {
+          html += `
+            <p>Nama        : ${nama}</p>
+            <p>Tahun Lahir : ${tahunLahir[index]}</p>
+            <p>Handphone   : ${handphoneMhs[index]}</p>`;
+        });
+
+        document.getElementById("arrayData").innerHTML = html;
+      }
+
+      window.onload = displayArrayData;
+    </script>
+  </body>
+</html>
